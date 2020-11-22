@@ -69,5 +69,5 @@ def test_lambda_handler(apigw_event, mocker):
 
     assert function_response["statusCode"] == 200
     assert "message" in function_response["body"]
-    assert data["message"] == "hello world"
+    assert data["message"] == "All systems are go"
     # assert "location" in data.dict_keys()

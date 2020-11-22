@@ -8,7 +8,7 @@ def lambda_handler(event, context):
     return {
         "statusCode": 200,
         "body": json.dumps({
-            "message": "all systems are go!",
+            "message": "All systems are go",
             # "location": ip.text.replace("\n", "")
         }),
     }
