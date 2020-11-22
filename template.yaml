@@ -45,11 +45,11 @@ Outputs:
     Description: "Implicit IAM Role created for Hello World function"
     Value: !GetAtt HelloWorldFunctionRole.Arn
   HealthCheckApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+    Description: "API Gateway endpoint URL for Prod stage for Health function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/health/"
   HealthCheckFunction:
-    Description: "Hello World Lambda Function ARN"
+    Description: "Health Lambda Function ARN"
     Value: !GetAtt HealthCheckFunction.Arn
   HealthCheckFunctionIamRole:
-    Description: "Implicit IAM Role created for Hello World function"
+    Description: "Implicit IAM Role created for Health function"
     Value: !GetAtt HealthCheckFunctionRole.Arn
