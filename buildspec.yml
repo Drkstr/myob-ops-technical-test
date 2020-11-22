@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+       - pip install pytest pip pytest-mock
+       - pytest hello_world/*
+       - pytest health_check/*
+
+  build:
+    commands:
+       - sam deploy --parameter-overrides VersionNumber=$CODEBUILD_BUILD_NUMBER LastCommitId=$CODEBUILD_RESOLVED_SOURCE_VERSION
