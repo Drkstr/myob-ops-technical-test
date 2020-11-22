@@ -5,13 +5,7 @@ Description: Sample SAM Template for MYOB ops-technical-test
 
 Globals:
   Function:
-    Timeout: 3
-    VpcConfig:
-      SecurityGroupIds:
-        - sg-085912345678492fb
-      SubnetIds:
-        - subnet-071f712345678e7c8
-        - subnet-07fd123456788a036
+    Timeout: 5
 
 Parameters:
   VersionNumber:
