@@ -12,10 +12,4 @@ The application uses AWS Lambda functions and an API Gateway API. These resource
 
 ## Deploying the application
 
-I have implemented CD for this project using AWS Code Pipeline and Code Deploy. The different stages in the build process are defined in the `buildspec.yml` file. The deployment is triggered when code is pushed to the main branch.   
-
-You can use this account to look at the CodePipeline and CodeBuild in the AWS console
-
-* [URL](https://881854846562.signin.aws.amazon.com/console)
-* User name: myob_user
-* Password: zt%NL29XhXt(750
+I have implemented CD for this project using AWS Code Pipeline and Code Deploy. The different stages in the build process are defined in the `buildspec.yml` file. The deployment is triggered when code is pushed to the main branch.
