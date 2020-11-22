@@ -46,7 +46,7 @@ Outputs:
     Value: !GetAtt HelloWorldFunctionRole.Arn
   HealthCheckApi:
     Description: "API Gateway endpoint URL for Prod stage for Hello World function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/health/"
   HealthCheckFunction:
     Description: "Hello World Lambda Function ARN"
     Value: !GetAtt HealthCheckFunction.Arn
