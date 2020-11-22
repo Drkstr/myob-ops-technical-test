@@ -2,9 +2,7 @@ import json
 
 import pytest
 
-# from hello_world import app
-# from hello_world import app
-from hello_world import app
+from health_check import app
 
 
 @pytest.fixture()
