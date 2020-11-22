@@ -21,6 +21,19 @@ Resources:
             Path: /hello
             Method: get
 
+  HealthCheckFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: health_check/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /health
+            Method: get
+
 Outputs:
   HelloWorldApi:
     Description: "API Gateway endpoint URL for Prod stage for Hello World function"
