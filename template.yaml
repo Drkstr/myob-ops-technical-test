@@ -5,7 +5,7 @@ Description: Sample SAM Template for MYOB ops-technical-test
 
 Globals:
   Function:
-    Timeout: 5
+    Timeout: 3
 
 Resources:
   HelloWorldFunction:
