@@ -9,4 +9,4 @@ phases:
 
   build:
     commands:
-       - sam deploy --parameter-overrides VersionNumber=$CODEBUILD_BUILD_NUMBER LastCommitId=$CODEBUILD_RESOLVED_SOURCE_VERSION
+       - sam deploy --parameter-overrides LastCommitId=$CODEBUILD_RESOLVED_SOURCE_VERSION VersionNumber=$CODEBUILD_BUILD_NUMBER

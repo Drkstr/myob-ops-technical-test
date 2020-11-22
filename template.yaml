@@ -54,7 +54,7 @@ Resources:
       Environment:
         Variables:
           VersionNumber: !Ref VersionNumber
-          clear: !Ref LastCommitId
+          LastCommitId: !Ref LastCommitId
           ApplicationName: !Ref ApplicationName
       Events:
         HelloWorld:
